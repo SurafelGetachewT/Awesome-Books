@@ -4,61 +4,60 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="./css/index.css">
+  <script src="./index.js" type="module"></script>
   <title>Awesome Books</title>
 </head>
 <body>
+  <!-- Header Section -->
   <header>
-    <div class="header">
-      <h2 class="header-title">Awesome Books</h2>
-      <nav>
-        <ul class="nav-list">
-          <li><a href="#" id="navList" onclick="displaySection('list')">List</a></li>
-          <li><a href="#" id="navNew" onclick="displaySection('form')">Add New</a></li>
-          <li><a href="#" id="navContact" onclick="displaySection('contact')">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-    <p id="date" class="date"></p>
-  </header>
-
-  <main>
-
-    <div>
-      <h1 id="title" class="title">All Awesome Books</h1>
-
-    </div>
-
-    <div id="list" class="list">
-      <ul id="book-list">
-      </ul>
-    </div>
-
-    <div id="form" class="form">
-      <form action="#" class="input-form" method="post">
-        <input id="bookTitle" type="text" placeholder="Title">
-        <input id="bookAuthor" type="text" placeholder="Author">
-        <button id="add-btn" type="button">Add</button>
-      </form>
-    </div>
-
-    <div id="contact" class="contact">
-      <p>
-        If you have any questions or you just want to say "Hello".
-        You can reach us to.
-      </p>
+    <h1>Awesome Books</h1>
+    <nav>
       <ul>
-        <li>Our email: <a href="#">mail@mail.com</a></li>
-        <li>Our twitter: <a href="#">@awesomeBooks</a></li>
-        <li>Our github: <a href="#">@awesomeBooks</a></li>
+        <li><button type="button" class="link active" id="listBtn">List</button>
+        </li>
+        <li>|</li>
+        <li><button type="button" class="link" id="addNewBtn">Add New</button></li>
+        <li>|</li>
+        <li><button type="button" class="link" id="contactBtn">Contact</button></li>
       </ul>
+    </nav>
+  </header>
+  <div class="date"></div>
+  <!-- List Section -->
+  <section class="list" id="list">
+    <h2>Your Awesome Books</h2>
+    <div class="collection">
     </div>
-
-  </main>
-  <footer class="footer">
-    <h3>Copyright &copy;</h3>
+  </section>
+  <!-- AddNew Section -->
+  <section class="addNew" id="addNew">
+    <h2>Add a new book</h2>
+    <div class="book-input">
+      <label for="title"></label>
+      <input type="text" id="title" name="title" placeholder="Title">
+      <label for="author"></label>
+      <input type="text" id="author" name="author" placeholder="Author">
+      <button type="button" id="addBtn">Add</button>
+    </div>
+  </section>
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Contact information</h2>
+    <p>Do you have any questions or you just want to say "Hello"? <br> You can reach out to us!
+    </p>
+    <ul>
+      <li>Our e-mail: mail@mail.com</li>
+      <li>Our phone number: +251914331419</li>
+      <li>Our address: Dessie, Ethiopia</li>
+    </ul>
+  </section>
+  <!-- Footer Section -->
+  <footer>
+    <span>Copyright ©️ 2022</span>
+    <span>
+      <a href="https://github.com/SurafelGetachewT/">Surafel Getachew</a>
+    </span>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/luxon@2.0.2/build/global/luxon.min.js"></script>
-  <script src="script.js"></script>
 </body>
 </html>
