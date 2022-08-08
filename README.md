@@ -18,11 +18,6 @@ This project is a basic website that allows users to add books to a list. The bo
 - Twitter: [@SuraGetch](https://twitter.com/SuraGetch)
 - LinkedIn: [LinekdIn](https://www.linkedin.com/in/surafel-getachew-80155b187/)
 
-👤 **Abel Gebeyehu**
-
-- GitHub: [@AbelG101](https://github.com/AbelG101)
-- LinkedIn: [Abel Gebeyehu](https://www.linkedin.com/in/abel-gebeyehu-779743183/)
-
 
 ## 🤝 Contributing
 
